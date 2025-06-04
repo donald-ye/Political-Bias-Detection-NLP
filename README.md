@@ -8,7 +8,7 @@ This project tackles the challenge of detecting political bias in online news ar
 ---
 
 📄 **[Final Research Report](docs/bias_misinformation_nlp_report.pdf)**
-📽️ [View Project Summary Slides]([https://your-canva-link.com](https://www.canva.com/design/DAGms2-C6JE/mZeceajHmoXcdp1LpOdMkA/edit?utm_content=DAGms2-C6JE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
+📽️ **[View Project Summary Slides]([https://your-canva-link.com](https://www.canva.com/design/DAGms2-C6JE/mZeceajHmoXcdp1LpOdMkA/edit?utm_content=DAGms2-C6JE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
 
 
 ## 🔑 Key Contributions
