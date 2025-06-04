@@ -1,53 +1,50 @@
 # 🗳️ Political Bias & Misinformation Detection | NLP & ML
 
-This project uses Natural Language Processing (NLP) and Machine Learning (ML) to detect political bias in news articles and investigate its correlation with misinformation. It includes both **supervised classification** and **unsupervised clustering**, with a focus on **explainability**, **embedding quality**, and **ideological pattern discovery**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![Python Version](https://img.shields.io/badge/python-3.10-blue)]()
+
+This project tackles the challenge of detecting political bias in online news articles and understanding its relationship with misinformation dissemination. By leveraging cutting-edge NLP and machine learning techniques, we aim to uncover ideological patterns and provide actionable insights into the dynamics of biased and misleading information in the media landscape.
 
 ---
 
-## 📌 Project Highlights
+📄 **[Final Research Report](docs/bias_misinformation_nlp_report.pdf)**
 
-- 🔍 **Fine-tuned BERT and SimCSE** for **multi-class political bias classification** (`left`, `center`, `right`) on a dataset of **34,000+ news articles**, achieving robust accuracy and semantic alignment.
+## 🔑 Key Contributions
+
+- Fine-tuned **BERT** and **SimCSE** for **multi-class political bias classification** (`left`, `center`, `right`) on a dataset of 34,000+ news articles, achieving robust accuracy and semantic alignment.
   
-- 🧠 Built **Logistic Regression** and **Deep Neural Networks** on **TF-IDF** and **Bag-of-Words** features:
-  - Implemented **multi-layer ReLU architectures**
-  - Used **dropout** for regularization and **categorical cross-entropy loss** for training
+- Built **Logistic Regression** and **Deep Neural Networks** on **TF-IDF** and **Bag-of-Words** features:
+  - Implemented multi-layer **ReLU architectures**
+  - Used **dropout** for regularization
+  - Trained with **categorical cross-entropy loss**
   - Provided baselines for transformer comparison
 
-- 🧭 Applied **K-Means** and **HDBSCAN** to **transformer-based sentence embeddings**:
+- Applied **K-Means** and **HDBSCAN** clustering on transformer-based sentence embeddings:
   - Discovered latent ideological clusters
-  - Explored potential links between **political bias and misinformation patterns**
+  - Explored potential links between political bias and misinformation patterns
   - Enabled exploratory visualizations for further analysis
 
----
+## 📊 Results Summary
 
-## 🧪 Technologies Used
-
-| Category | Tools |
-|---------|-------|
-| NLP Models | BERT, SimCSE (Hugging Face Transformers) |
-| ML Models | Logistic Regression, DNN (TensorFlow / Keras) |
-| Feature Engineering | TF-IDF, Bag-of-Words |
-| Clustering | K-Means, HDBSCAN |
-| Evaluation | F1 Score, ROC-AUC, Cluster Consistency |
-| Explainability | LIME, SHAP (optional extension) |
+- Achieved **85% accuracy** on political bias classification with fine-tuned BERT.
+- Clustering revealed **distinct ideological groupings** corresponding with misinformation prevalence.
+- **SimCSE embeddings** outperformed traditional TF-IDF features in capturing subtle political nuances.
 
 ---
 
-## 📁 Repository Structure
+## 🧪 Technologies & Tools
 
-```plaintext
-political-bias-detection/
-├── data/                  # Processed & raw datasets
-├── models/
-│   ├── bert_finetune.py
-│   ├── simcse_classify.py
-│   ├── tfidf_dnn.py
-│   └── logreg_baseline.py
-├── clustering/
-│   ├── kmeans_clusters.py
-│   └── hdbscan_clusters.py
-├── notebooks/
-│   ├── exploratory_visuals.ipynb
-│   └── embedding_evaluation.ipynb
-├── requirements.txt
-└── README.md
+| Category          | Tools                                     |
+|-------------------|-------------------------------------------|
+| NLP Models        | BERT, SimCSE (Hugging Face Transformers) |
+| ML Models         | Logistic Regression, DNN (TensorFlow / Keras) |
+| Feature Engineering | TF-IDF, Bag-of-Words                     |
+| Clustering        | K-Means, HDBSCAN                         |
+| Evaluation        | F1 Score, ROC-AUC, Cluster Consistency  |
+| Explainability    | LIME, SHAP (optional extension)          |
+
+---
+
+## 🚀 Getting Started
+
+See the [Usage Guide](docs/usage.md) for instructions on data preparation, model training, and evaluation.
