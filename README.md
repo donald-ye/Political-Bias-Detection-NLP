@@ -43,8 +43,4 @@ This project tackles the challenge of detecting political bias in online news ar
 | Evaluation        | F1 Score, ROC-AUC, Cluster Consistency  |
 | Explainability    | LIME, SHAP (optional extension)          |
 
----
 
-## 🚀 Getting Started
-
-See the [Usage Guide](docs/usage.md) for instructions on data preparation, model training, and evaluation.
