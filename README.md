@@ -23,12 +23,14 @@ This project tackles the challenge of detecting political bias in online news ar
   - Discovered latent ideological clusters
   - Explored potential links between political bias and misinformation patterns
   - Enabled exploratory visualizations for further analysis
+ 
+---
 
 ## 📊 Results Summary
 
-- Achieved **85% accuracy** on political bias classification with fine-tuned BERT.
-- Clustering revealed **distinct ideological groupings** corresponding with misinformation prevalence.
-- **SimCSE embeddings** outperformed traditional TF-IDF features in capturing subtle political nuances.
+- Logistic Regression: ~22% validation accuracy, precision/recall highly imbalanced, biased toward “right” class.
+- Deep Neural Network: ~27% validation accuracy, ROC-AUC 0.4751, overfitting observed.
+- DistilBERT: ~42% validation accuracy, improved class-wise prediction despite imbalance.
 
 ---
 
@@ -43,4 +45,11 @@ This project tackles the challenge of detecting political bias in online news ar
 | Evaluation        | F1 Score, ROC-AUC, Cluster Consistency  |
 | Explainability    | LIME, SHAP (optional extension)          |
 
+---
 
+## 🔮 Future Work
+
+- Explore data augmentation or rebalancing to address class imbalance.  
+- Investigate richer contextual embeddings beyond SimCSE.  
+- Implement explainability techniques (LIME, SHAP) for model interpretability.  
+- Extend clustering analysis with alternative algorithms and feature sets.
